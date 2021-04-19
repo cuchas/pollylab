@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "fkWQowMHcykAJ5yrhU5FB/qrZJIyxhb8kbPgerKur9OyWK/pmBXSRFqMToRgL6tQ+2ytCTXdjvsMNDacWyriuw==",
+  "success": true,
+  "projectFilePath": "/Users/ecucharro/Code/labaspnet/labaspnet.csproj",
+  "expectedPackageFiles": [
+    "/Users/ecucharro/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/ecucharro/.nuget/packages/polly/7.2.1/polly.7.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

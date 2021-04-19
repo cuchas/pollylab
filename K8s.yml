@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: labaspnet
+  labels: 
+    app: labaspnet
+spec:
+  replicas: 1
+  template: 
+    metadata:
+      name: labaspnet
+      labels:
+        app: labaspnet
+    spec:
+      containers:
+      - name: labaspnet
+        image: labaspnetapp.azurecr.io/labaspnet
+        imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: labaspnet
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: aspnetapp-service
+spec:
+  selector: 
+    app: labaspnet
+  ports:
+  - port: 80
+  type: LoadBalancer
+
+
